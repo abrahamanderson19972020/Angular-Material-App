@@ -7,7 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: ContactmanagerComponent,
-    children: [{ path: '', component: MainContentComponent }],
+    children: [
+      { path: ':id', component: MainContentComponent },
+      { path: '', component: MainContentComponent },
+    ],
   },
   { path: '**', redirectTo: '' },
 ];

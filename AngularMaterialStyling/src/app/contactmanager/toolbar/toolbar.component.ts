@@ -8,7 +8,5 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 export class ToolbarComponent implements OnInit {
   @Output() toggleSidenav = new EventEmitter();
 
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
-  }
+  ngOnInit(): void {}
 }
