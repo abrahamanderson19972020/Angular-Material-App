@@ -10,6 +10,7 @@ import { MaterialModule } from '../shared/material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { HttpClientModule } from '@angular/common/http';
 import { NoteComponent } from './note/note.component';
+import { NewContactDialogComponent } from './new-contact-dialog/new-contact-dialog.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { NoteComponent } from './note/note.component';
     MainContentComponent,
     SidenavComponent,
     NoteComponent,
+    NewContactDialogComponent,
   ],
   imports: [
     CommonModule,
