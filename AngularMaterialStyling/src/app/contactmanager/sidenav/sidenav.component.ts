@@ -14,6 +14,7 @@ const SMALL_WIDTH_BREAKPOINT = 720;
 })
 export class SidenavComponent implements OnInit {
   isScreenSmall: boolean = false;
+  isDarkTheme: boolean = false;
   users: User[] = [];
   @ViewChild(MatSidenav) sidenav: MatSidenav | undefined;
 
@@ -47,5 +48,8 @@ export class SidenavComponent implements OnInit {
         console.log('Failed to fetch users');
       }
     );
+  }
+  toggleTheme() {
+    this.isDarkTheme = !this.isDarkTheme;
   }
 }

@@ -9,7 +9,7 @@ import { NewContactDialogComponent } from '../new-contact-dialog/new-contact-dia
 })
 export class ToolbarComponent implements OnInit {
   @Output() toggleSidenav = new EventEmitter();
-
+  @Output() toggleTheme = new EventEmitter();
   constructor(private matDialog: MatDialog) {}
 
   ngOnInit(): void {}
